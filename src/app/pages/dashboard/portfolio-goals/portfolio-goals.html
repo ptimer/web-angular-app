@@ -1,0 +1,24 @@
+<div class="card">
+    <h2 class="text-2xl mb-30">Portfolio goals</h2>
+    <div class="flex flex-col gap-35">
+        <div>
+            <p class="text-slate-400 text-sm mb-10 uppercase">PORTFOLIO LOSS RATIO TARGET</p>
+            <app-loss-ratio-progress-bar></app-loss-ratio-progress-bar>
+        </div>
+
+        <div>
+            <p class="text-slate-400 text-sm mb-10 uppercase">RENEWAL RETENTION</p>
+            <app-retention-progress-bar></app-retention-progress-bar>
+        </div>
+
+        <div>
+            <p class="text-slate-400 text-sm mb-10 uppercase">new business target</p>
+            <app-target-progress-bar [currentAmount]="8.1" [targetAmount]="12"></app-target-progress-bar>
+        </div>
+
+        <div>
+            <p class="text-slate-400 text-sm mb-10 uppercase">annual gwp target</p>
+            <app-target-progress-bar [currentAmount]="28.4" [targetAmount]="42"></app-target-progress-bar>
+        </div>
+    </div>
+</div>
