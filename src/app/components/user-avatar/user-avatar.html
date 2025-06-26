@@ -1,0 +1,9 @@
+<div 
+    [ngClass]="{  'w-48 h-48': isSizeLg, 'w-32 h-32': isSizeMd }" 
+    class="bg-indigo-700-gradient rounded-full flex items-center justify-center flex-shrink-0"
+>
+    <span 
+        class="uppercase text-white"
+        [ngClass]="{ 'text-sm': isSizeMd, 'text-xl': isSizeLg }"
+    >{{initials}}</span>
+</div>
