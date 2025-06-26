@@ -1,0 +1,33 @@
+<nav class="py-17 flex">
+    <div class="flex gap-8 flex-1 overflow-hidden">
+        @for (menuItem of menuItems(); track menuItem.label) {
+            <div 
+                [routerLink]="menuItem.link" 
+                routerLinkActive="!bg-blue-500 text-white"
+                [ngClass]="{
+                    'bg-blue-500 text-white': isActive(menuItem.link),
+                    'bg-slate-950 text-gray-300': !isActive(menuItem.link)
+                }"
+                class="flex gap-15 py-14 px-20 items-center justify-center rounded-4xl cursor-pointer"
+            >
+                <app-svg-icon 
+                    class="w-18 h-19 [&_use]:fill-none"
+                    [ngClass]="{
+                        '[&_use]:stroke-white': isActive(menuItem.link),
+                        '[&_use]:stroke-blue-500': !isActive(menuItem.link)
+                    }"
+                    [icon]="menuItem.icon"
+                ></app-svg-icon>
+                <span class="text-base">{{menuItem.label}}</span>
+            </div>
+        }
+    </div>
+    <div class="pl-9 flex gap-13 w-fit">
+        <div class="cursor-pointer w-48 h-48 flex items-center justify-center rounded-full bg-slate-950 border-1 border-slate-700">
+            <app-svg-icon class="w-19 h-14 [&_use]:stroke-slate-700 [&_use]:fill-none" icon="arrow-left"></app-svg-icon>
+        </div>
+        <div class="cursor-pointer w-48 h-48 flex items-center justify-center rounded-full bg-slate-950 border-1 border-slate-700">
+            <app-svg-icon class="w-19 h-14 [&_use]:stroke-slate-700 [&_use]:fill-none" icon="arrow-right"></app-svg-icon>
+        </div>
+    </div>
+</nav>
