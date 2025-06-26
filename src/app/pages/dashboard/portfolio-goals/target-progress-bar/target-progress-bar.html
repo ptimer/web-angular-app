@@ -1,0 +1,14 @@
+<div class="flex flex-col gap-3 h-25 w-full">
+  <div class="h-full flex gap-5">
+    <div class="h-full flex-1 bg-[#313853] rounded-r-4xl">
+      <div
+        class="h-full rounded-r-4xl bg-indigo-700-gradient flex items-center justify-end px-10"
+        [style.width]="progressPercentage + '%'"
+      >
+        <span class="text-white text-sm">${{ currentAmount }}M</span>
+      </div>
+    </div>
+    <span class="text-white font-bold text-sm">${{ targetAmount }}M</span>
+  </div>
+  <div class="text-xs mt-4 text-gray-400 text-center">{{ progressPercentage }}%</div>
+</div>
