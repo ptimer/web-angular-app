@@ -1,0 +1,56 @@
+<div class="pt-40">
+    <h2 class="text-2xl text-[#E5E7EB] mb-28">Performance Metrics</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-15">
+        <div class="card flex flex-col min-h-240">
+            <div class="flex gap-15 mb-20 items-center">
+                <h2 class="text-xl">Winnability</h2>
+                <div class="flex gap-5">
+                    <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-800"></div>
+                    <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-800"></div>
+                    <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-800"></div>
+                    <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-800"></div>
+                </div>
+            </div>
+            <h1 class="text-3xl">Very Strong</h1>
+            <app-arrow-link label="See all factors" href="#" class="mt-auto"></app-arrow-link>
+        </div>
+
+        <div class="card flex flex-col min-h-240">
+            <div class="flex gap-15 mb-20 items-center">
+                <h2 class="text-xl">Loss Ratio</h2>
+            </div>
+            <h1 class="text-3xl mb-70">
+                25% 
+                <span class="text-sm text-[#8A8C98]">vs 42% target</span>
+            </h1>
+            <app-arrow-link label="View history" href="#" class="mt-auto"></app-arrow-link>
+        </div>
+
+        <div class="card flex flex-col min-h-240">
+            <div class="flex gap-15 mb-20 items-center">
+                <h2 class="text-xl">Premium Growth</h2>
+            </div>
+            <h1 class="text-3xl">
+                12.4% 
+                <span class="text-sm text-[#8A8C98]">YoY increase $123M vs $150M Target</span>
+            </h1>
+            <app-arrow-link label="View trend" href="#" class="mt-auto"></app-arrow-link>
+        </div>
+
+        <div class="card flex flex-col gap-10">
+            <h2 class="text-xl">Exposure Distribution</h2>
+            <div class="flex gap-20 items-center">
+                <app-progress-bar [currentAmount]="71.4" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                <span class="text-sm text-[#E5E7EB]">Marine Cargo: 71.4%</span>
+            </div>
+            <div class="flex gap-20 items-center">
+                <app-progress-bar [currentAmount]="20" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                <span class="text-sm text-[#E5E7EB]">General Liability: 20%</span>
+            </div>
+            <div class="flex gap-20 items-center">
+                <app-progress-bar [currentAmount]="8.6" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                <span class="text-sm text-[#E5E7EB]">Workers Comp: 8.6%</span>
+            </div>
+        </div>
+    </div>
+</div>
