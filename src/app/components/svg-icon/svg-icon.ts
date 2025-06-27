@@ -13,6 +13,12 @@ export type Icon =
   'three-dots' |
   'wide-arrow-bottom' |
   'wide-arrow-top' |
+  'exclamation-mark' |
+  'ship' |
+  'guard-check' |
+  'guard-user' |
+  'umbrella' |
+  'check' |
   'none';
 
 @Component({
