@@ -1,172 +1,47 @@
 <div class="overflow-x-auto">
-    <table class="w-full">
-        <thead>
-            <tr class="text-left bg-slate-900 text-xs text-slate-400 uppercase">
-                <th class="px-15 py-10">ORIGINATOR</th>
-                <th class="px-15 py-10">CLIENT/LINE</th>
-                <th class="px-15 py-10">TYPE</th>
-                <th class="px-15 py-10">STATUS</th>
-                <th class="px-15 py-10">CREATED</th>
-                <th class="px-15 py-10"></th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Table Row 1 -->
-            <tr class="text-sm text-gray-200 bg-transparent">
-                <td class="px-15 py-10 flex items-center gap-8">
-                    <app-user-avatar firstName="Sam" lastName="Masters" size="md"></app-user-avatar>
-                    <span>Sam Masters</span>
-                </td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex flex-col">
-                        <span>NAMEX Tech Solutions</span>
-                        <span class="text-slate-400">Cyber Liability</span>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">Underwriter Referral</td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex gap-5 items-center">
-                        <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-500"></div>
-                        <div>New</div>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">04/16/2025</td>
-                <td class="px-15 py-10 align-top">
-                    <button class="border-2 border-gray-200 cursor-pointer rounded-full flex items-center justify-center w-24 h-24">
-                        <app-svg-icon icon="three-dots" class="[&_use]:fill-gray-200 w-2 h-10"></app-svg-icon>
-                    </button>
-                </td>
-            </tr>
-            <!-- Table Row 2 -->
-            <tr class="text-sm text-gray-200 bg-slate-900">
-                <td class="px-15 py-10 bg-transparent flex items-center gap-8">
-                    <app-user-avatar firstName="Annalise" lastName="Willis" size="md"></app-user-avatar>
-                    <span>Annalise Willis</span>
-                </td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex flex-col">
-                        <span>Maritime Logistics Corp</span>
-                        <span class="text-slate-400">Marine Cargo</span>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">Underwriter Referral</td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex gap-5 items-center">
-                        <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-500"></div>
-                        <div>New</div>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">04/20/2025</td>
-                <td class="px-15 py-10 align-top">
-                    <button class="border-2 border-gray-200 cursor-pointer rounded-full flex items-center justify-center w-24 h-24">
-                        <app-svg-icon icon="three-dots" class="[&_use]:fill-gray-200 w-2 h-10"></app-svg-icon>
-                    </button>
-                </td>
-            </tr>
-            <!-- Table Row 3 -->
-            <tr class="text-sm text-gray-200">
-                <td class="px-15 py-10 bg-transparent flex items-center gap-8">
-                    <app-user-avatar firstName="Patrick" lastName="Devonport" size="md"></app-user-avatar>
-                    <span>Patrick Devonport</span>
-                </td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex flex-col">
-                        <span>GreenField Energy Ltd</span>
-                        <span class="text-slate-400">Environmental</span>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">Loss Control Request</td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex gap-5 items-center">
-                        <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-500"></div>
-                        <div>New</div>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">04/20/2025</td>
-                <td class="px-15 py-10 align-top">
-                    <button class="border-2 border-gray-200 cursor-pointer rounded-full flex items-center justify-center w-24 h-24">
-                        <app-svg-icon icon="three-dots" class="[&_use]:fill-gray-200 w-2 h-10"></app-svg-icon>
-                    </button>
-                </td>
-            </tr>
-            <!-- Table Row 4 -->
-            <tr class="text-sm text-gray-200 bg-slate-900">
-                <td class="px-15 py-10 bg-transparent flex items-center gap-8">
-                    <app-user-avatar firstName="Ana" lastName="Killian" size="md"></app-user-avatar>
-                    <span>Ana Killian</span>
-                </td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex flex-col">
-                        <span>NorthStar Financial Group</span>
-                        <span class="text-slate-400">D&O Liability</span>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">Underwriter Referral</td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex gap-5 items-center">
-                        <div class="rounded-full flex-shrink-0 h-10 w-10 bg-amber-300"></div>
-                        <div>Pending Review</div>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">04/22/2025</td>
-                <td class="px-15 py-10 align-top">
-                    <button class="border-2 border-gray-200 cursor-pointer rounded-full flex items-center justify-center w-24 h-24">
-                        <app-svg-icon icon="three-dots" class="[&_use]:fill-gray-200 w-2 h-10"></app-svg-icon>
-                    </button>
-                </td>
-            </tr>
-            <!-- Table Row 5 -->
-            <tr class="text-sm text-gray-200">
-                <td class="px-15 py-10 bg-transparent flex items-center gap-8">
-                    <app-user-avatar firstName="Ana" lastName="Killian" size="md"></app-user-avatar>
-                    <span>Ana Killian</span>
-                </td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex flex-col">
-                        <span>Alliance Healthcare Systems</span>
-                        <span class="text-slate-400">Medical Malpractice</span>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">Email</td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex gap-5 items-center">
-                        <div class="rounded-full flex-shrink-0 h-10 w-10 bg-emerald-400"></div>
-                        <div>Completed</div>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">04/28/2025</td>
-                <td class="px-15 py-10 align-top">
-                    <button class="border-2 border-gray-200 cursor-pointer rounded-full flex items-center justify-center w-24 h-24">
-                        <app-svg-icon icon="three-dots" class="[&_use]:fill-gray-200 w-2 h-10"></app-svg-icon>
-                    </button>
-                </td>
-            </tr>
-            <!-- Table Row 6 -->
-            <tr class="text-sm text-gray-200 bg-slate-900">
-                <td class="px-15 py-10 bg-transparent flex items-center gap-8">
-                    <app-user-avatar firstName="MK" lastName="K" size="md"></app-user-avatar>
-                    <span>MK Me</span>
-                </td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex flex-col">
-                        <span>QuantumTech Industries</span>
-                        <span class="text-slate-400">Product Liability</span>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">Email</td>
-                <td class="px-15 py-10 align-top">
-                    <div class="flex gap-5 items-center">
-                        <div class="rounded-full flex-shrink-0 h-10 w-10 bg-emerald-400"></div>
-                        <div>Completed</div>
-                    </div>
-                </td>
-                <td class="px-15 py-10 align-top">04/20/2025</td>
-                <td class="px-15 py-10 align-top">
-                    <button class="border-2 border-gray-200 cursor-pointer rounded-full flex items-center justify-center w-24 h-24">
-                        <app-svg-icon icon="three-dots" class="[&_use]:fill-gray-200 w-2 h-10"></app-svg-icon>
-                    </button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  <table class="w-full">
+    <thead>
+      <tr class="text-left bg-slate-900 text-xs text-slate-400 uppercase">
+        <th class="px-15 py-10">ORIGINATOR</th>
+        <th class="px-15 py-10">CLIENT/LINE</th>
+        <th class="px-15 py-10">TYPE</th>
+        <th class="px-15 py-10">STATUS</th>
+        <th class="px-15 py-10">CREATED</th>
+        <th class="px-15 py-10"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data; let i = index" [ngClass]="i % 2 === 1 ? 'bg-slate-900' : 'bg-transparent'" class="text-sm text-gray-200">
+        <td class="px-15 py-10 flex items-center gap-8">
+          <app-user-avatar firstName={{getInitials(item.originator)[0]}} lastName={{getInitials(item.originator)[1]}} size="md"></app-user-avatar>
+          <span>{{ item.originator }}</span>
+        </td>
+        <td class="px-15 py-10 align-top">
+          <div class="flex flex-col">
+            <span>{{ item.client }}</span>
+            <span class="text-slate-400">{{ item.line }}</span>
+          </div>
+        </td>
+        <td class="px-15 py-10 align-top">{{ item.type }}</td>
+        <td class="px-15 py-10 align-top">
+          <div class="flex gap-5 items-center">
+            <div class="rounded-full flex-shrink-0 h-10 w-10"
+                [ngClass]="{
+                  'bg-blue-500': item.status === 'New',
+                  'bg-amber-300': item.status === 'Pending Review',
+                  'bg-emerald-400': item.status === 'Completed'
+                }">
+            </div>
+            <div>{{ item.status }}</div>
+          </div>
+        </td>
+        <td class="px-15 py-10 align-top">{{ item.created }}</td>
+        <td class="px-15 py-10 align-top">
+          <button class="border-2 border-gray-200 cursor-pointer rounded-full flex items-center justify-center w-24 h-24">
+            <app-svg-icon icon="three-dots" class="[&_use]:fill-gray-200 w-2 h-10"></app-svg-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

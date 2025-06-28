@@ -1,10 +1,11 @@
 <div class="card">
-    <h2 class="text-2xl mb-20">Work Queue</h2>
-    
-    <div class="flex gap-8 mb-25">
-        <button class="px-16 py-7 bg-blue-500 text-white rounded-4xl text-sm cursor-pointer">Assigned to me(12)</button>
-        <button class="px-16 py-7 bg-slate-950 text-gray-300 rounded-4xl text-sm cursor-pointer">Pending Review (8)</button>
-        <button class="px-16 py-7 bg-slate-950 text-gray-300 rounded-4xl text-sm cursor-pointer">Referrals (3)</button>
-    </div>
-    <app-table></app-table>
+  <h2 class="text-2xl mb-20">Work Queue</h2>
+
+  <div class="flex gap-8 mb-25">
+    <button class="px-16 py-7 bg-blue-500 text-white rounded-4xl text-sm cursor-pointer">Assigned to me(12)</button>
+    <button class="px-16 py-7 bg-slate-950 text-gray-300 rounded-4xl text-sm cursor-pointer">Pending Review (8)</button>
+    <button class="px-16 py-7 bg-slate-950 text-gray-300 rounded-4xl text-sm cursor-pointer">Referrals (3)</button>
+  </div>
+
+  <app-table [data]="workQueue"></app-table>
 </div>
