@@ -3,19 +3,21 @@ import { Icon, SvgIcon } from '../svg-icon/svg-icon';
 import { Router, RouterModule } from '@angular/router';
 import { NgClass } from '@angular/common';
 
+type Link = string | string[];
+
 interface MenuItem {
   label: string;
   icon: Icon;
-  link: string;
+  link: Link;
 }
 
 const MENU_ITEMS: MenuItem[] = [
-  { label: 'Dashboard', icon: 'house', link: '/dashboard' },
-  { label: 'Accounts', icon: 'database', link: '/accounts' },
-  { label: 'Brokers', icon: 'people', link: '/brokers' },
-  { label: 'Submissions', icon: 'document', link: '/submissions' },
-  { label: 'Organizations', icon: 'building', link: '/organizations' },
-  { label: 'Admin', icon: 'key', link: '/admin' },
+  { label: 'Dashboard', icon: 'house', link: ['/', 'dashboard'] },
+  { label: 'Accounts', icon: 'database', link: 'accounts' },
+  { label: 'Brokers', icon: 'people', link: 'brokers' },
+  { label: 'Submissions', icon: 'document', link: 'submissions' },
+  { label: 'Organizations', icon: 'building', link: 'organizations' },
+  { label: 'Admin', icon: 'key', link: 'admin' },
 ];
 
 @Component({
@@ -28,7 +30,11 @@ export class Navbar {
 
   constructor(private router: Router) {}
 
-  isActive(link: string): boolean {
+  isActive(link: Link): boolean {
+    if (Array.isArray(link)) {
+      return link.includes(this.router.url);
+    }
+
     return this.router.url === link;
   }
 }
