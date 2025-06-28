@@ -1,1 +1,217 @@
-<p>account-details works!</p>
+<div class="pt-40">
+    <h2 class="text-2xl text-[#E5E7EB] mb-20">Account Details</h2>
+    <div class="card flex">
+        <!-- left menu -->
+        <aside class="flex flex-col pr-20 border-[#8A8B98] border-r-1 border-dashed max-w-350 gap-40">
+            <div class="card bg-[#252A3D] gap-30 flex flex-col rounded-xl max-h-[fit-content]">
+                <div class="flex gap-40 justify-between items-center cursor-pointer">
+                    <h1 class="text-2xl">Decision Support</h1>
+                    <!-- badge -->
+                    <div class="bg-[#252A38] border-[#E5E7EB] border-1 p-10 rounded-xl text-2xl">4</div>
+                </div>
+                <div class="cursor-pointer text-[#3B82F6] text-xl ml-30">Winnability</div>
+                <div class="cursor-pointer text-xl ml-30">Exposure Review & Suggested Coverage</div>
+                <div class="cursor-pointer text-xl ml-30">Portfolio Strategy Alignment</div>
+                <div class="cursor-pointer text-xl ml-30">Broker Analytics</div>
+            </div>
+            <div class="ml-30 flex gap-40 justify-between items-center cursor-pointer">
+                <h1 class="text-2xl">Risk Assessment</h1>
+                <!-- badge -->
+                <div class="bg-[#252A38] p-10 rounded-xl text-2xl">6</div>
+            </div>
+            <div class="ml-30 flex gap-40 justify-between items-center cursor-pointer">
+                <h1 class="text-2xl">Documents and Compliance</h1>
+                <!-- badge -->
+                <div class="bg-[#252A38] p-10 rounded-xl text-2xl">2</div>
+            </div>
+        </aside>
+
+        <div class="flex-1 ml-20 flex flex-col gap-20">
+            <h2 class="text-4xl text-[#E5E7EB] mb-20">Winnability</h2>
+            <div class="flex justify-between gap-10">
+                <div class="card bg-[#252A3D] gap-20 flex flex-col">
+                    <h2 class="text-xl">Overall Score</h2>
+                    <div class="flex gap-5">
+                        <h1 class="text-4xl">82%</h1>
+                        <!-- TODO: component -->
+                        <div class="rounded-4xl gap-4 border-1 bg-transparent border-blue-500 text-blue-500 flex items-center justify-center px-15">
+                            <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-500"></div>
+                            <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-500"></div>
+                            <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-500"></div>
+                            <div class="rounded-full flex-shrink-0 h-10 w-10 bg-blue-500"></div>
+                            <span>Very Strong</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-[#252A3D]">
+                    <h2 class="text-xl">Historical Trend</h2>
+                    <div>
+                        <h1>TODO: ADD CHART LIB</h1>
+                    </div>
+                </div>
+
+                <div class="card bg-[#252A3D] flex flex-col gap-10">
+                    <h2 class="text-xl">Exposure Distribution</h2>
+                    <div class="flex gap-20 items-center">
+                        <app-progress-bar [currentAmount]="82" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                        <span class="text-sm text-[#E5E7EB]">Your score: 82%</span>
+                    </div>
+                    <div class="flex gap-20 items-center">
+                        <app-progress-bar [currentAmount]="68" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                        <span class="text-sm text-[#E5E7EB]">Market Avg: 68%</span>
+                    </div>
+                    <div class="flex gap-20 items-center">
+                        <app-progress-bar [currentAmount]="83" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                        <span class="text-sm text-[#E5E7EB]">Top Competitor: 83%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-10">
+                <!-- Increasing Winnability -->
+                <div class="card bg-[#252A3D] gap-30 flex flex-col">
+                    <h1 class="text-2xl text-[#E5E7EB] mb-20 flex gap-5">
+                        <div class="w-30 h-30 flex justify-center items-center border-1 border-[#3BB979] rounded-full shrink-0">
+                            <app-svg-icon icon="arrow-top" class="w-14 h-14"></app-svg-icon>
+                        </div>
+                        Increasing Winnability
+                    </h1>
+                    
+                    <div class="flex flex-col gap-20">
+                        <div class="flex gap-10 flex-col">
+                            
+                            <div class="flex items-center gap-5">
+                                <div class="flex items-center justify-center border-1 border-[#3BB979] rounded-full w-43 h-43 shrink-0">1</div>
+                                <div class="flex-1 flex flex-col gap-5">
+                                    <div>Broker relationship</div>
+                                    <div class="flex gap-5">
+                                        <app-progress-bar [currentAmount]="28" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                                        <span class="text-sm text-[#E5E7EB]">+28%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-5">
+                                <div class="flex items-center justify-center border-1 border-[#3BB979] rounded-full w-43 h-43 shrink-0">2</div>
+                                <div class="flex-1 flex flex-col gap-5">
+                                    <div>Loss history</div>
+                                    <div class="flex gap-5">
+                                        <app-progress-bar [currentAmount]="22" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                                        <span class="text-sm text-[#E5E7EB]">+22%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-5">
+                                <div class="flex items-center justify-center border-1 border-[#3BB979] rounded-full w-43 h-43 shrink-0">3</div>
+                                <div class="flex-1 flex flex-col gap-5">
+                                    <div>Industry growth</div>
+                                    <div class="flex gap-5">
+                                        <app-progress-bar [currentAmount]="12" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                                        <span class="text-sm text-[#E5E7EB]">+12%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-5">
+                                <div class="flex items-center justify-center border-1 border-[#3BB979] rounded-full w-43 h-43 shrink-0">4</div>
+                                <div class="flex-1 flex flex-col gap-5">
+                                    <div>Multiline opportunity</div>
+                                    <div class="flex gap-5">
+                                        <app-progress-bar [currentAmount]="11" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                                        <span class="text-sm text-[#E5E7EB]">+11%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decreasing Winnability -->
+                <div class="card bg-[#252A3D] gap-30 flex flex-col">
+                    <h1 class="text-2xl text-[#E5E7EB] mb-20 flex gap-5">
+                        <div class="w-30 h-30 flex justify-center items-center border-1 border-[#FDD261] rounded-full shrink-0">
+                            <app-svg-icon icon="arrow-top" class="w-14 h-14"></app-svg-icon>
+                        </div>
+                        Decreasing Winnability
+                    </h1>
+                    
+                    <div class="flex flex-col gap-20">
+                        <div class="flex gap-10 flex-col"> 
+                            <div class="flex items-center gap-5">
+                                <div class="flex items-center justify-center border-1 border-[#FDD261] rounded-full w-43 h-43 shrink-0">1</div>
+                                <div class="flex-1 flex flex-col gap-5">
+                                    <div>Premium/pricing</div>
+                                    <div class="flex gap-5">
+                                        <app-progress-bar [currentAmount]="20" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                                        <span class="text-sm text-[#E5E7EB]">-20%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-5">
+                                <div class="flex items-center justify-center border-1 border-[#FDD261] rounded-full w-43 h-43 shrink-0">2</div>
+                                <div class="flex-1 flex flex-col gap-5">
+                                    <div>Total exposure</div>
+                                    <div class="flex gap-5">
+                                        <app-progress-bar [currentAmount]="18" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                                        <span class="text-sm text-[#E5E7EB]">-18%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-5">
+                                <div class="flex items-center justify-center border-1 border-[#FDD261] rounded-full w-43 h-43 shrink-0">3</div>
+                                <div class="flex-1 flex flex-col gap-5">
+                                    <div>Loss rate trend</div>
+                                    <div class="flex gap-5">
+                                        <app-progress-bar [currentAmount]="13" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                                        <span class="text-sm text-[#E5E7EB]">-13%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-5">
+                                <div class="flex items-center justify-center border-1 border-[#FDD261] rounded-full w-43 h-43 shrink-0">4</div>
+                                <div class="flex-1 flex flex-col gap-5">
+                                    <div>Market competition</div>
+                                    <div class="flex gap-5">
+                                        <app-progress-bar [currentAmount]="9" [targetAmount]="100" class="flex-1"></app-progress-bar>
+                                        <span class="text-sm text-[#E5E7EB]">-9%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AI-Powered Recommendations -->
+            <div class="card bg-[#252A3D] flex flex-col gap-30">
+                <h1 class="text-2xl text-[#3BB979] flex gap-5">
+                    <app-svg-icon icon="rocket" class="w-29 h-29"></app-svg-icon>
+                    AI-Powered Recommendations
+                </h1>
+
+                <div class="flex justify-between gap-50">
+                    <div class="flex flex-col gap-5">
+                        <span class="text-sm text-[#E5E7EB]">Offer 5% premium discount in exchange for 3-year commitment</span>
+                        <p class="text-sm text-[#8A8B98]">Historical win rate increases 18% with multi-year commitments. Current pricing is 12% above market average. This premium discount will strengthen value narrative while maintaining acceptable profit thresholds.</p>
+                    </div>
+
+                    <button class="shrink-0 h-60 w-180 flex items-center justify-center rounded-4xl bg-[#3BB979] text-[#1D2125]">Apply</button>
+                </div>
+
+                <div class="flex justify-between gap-50">
+                    <div class="flex flex-col gap-5">
+                        <span class="text-sm text-[#E5E7EB]">Prepare risk control reviews for cargo-handling procedures</span>
+                        <p class="text-sm text-[#8A8B98]">Probability for loss events rises by ~20% based on similar maritime accounts in your portfolio. Specific focus on loading/unloading operations would address the most frequent claim scenarios.</p>
+                    </div>
+
+                    <button class="shrink-0 h-60 w-180 flex items-center justify-center rounded-4xl bg-[#3BB979] text-[#1D2125]">Apply</button>
+                </div> 
+            </div>
+        </div> 
+    </div>
+</div>
