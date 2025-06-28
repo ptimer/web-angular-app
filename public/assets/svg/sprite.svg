@@ -66,4 +66,21 @@
   <symbol id="check" viewBox="0 0 12 10">
     <path d="M1 5L4.33299 8.32996L11 1.67004" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
+
+  <symbol id="arrow-bottom" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.99988 1.67004V12.33M6.99988 12.33L1.66992 7M6.99988 12.33L12.3298 7" stroke="#FDD261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="arrow-top" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7 12.33V1.67004M7 1.67004L12.333 7M7 1.67004L1.66602 7" stroke="#3BB979" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="rocket" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 20.9999C2 22.6799 1.33301 27.6698 1.33301 27.6698C1.33301 27.6698 6.32 26.9999 8 24.9999C8.946 23.8799 8.933 22.16 7.88 21.12C7.361 20.63 6.67901 20.34 5.96301 20.32C5.24701 20.3 4.548 20.5399 4 20.9999ZM14 18.9999L10 14.9999C10.709 13.1599 11.603 11.3899 12.666 9.72989C14.22 7.24989 16.383 5.19995 18.95 3.78995C21.518 2.37995 24.403 1.64983 27.333 1.66983C27.333 5.28983 26.293 11.67 19.333 16.33C17.649 17.4 15.862 18.2899 14 18.9999Z" stroke="#3BB979" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 15.0001H3.33301C3.33301 15.0001 4.066 10.96 6 9.67003C8.16 8.23003 12.666 9.67003 12.666 9.67003M14 19.0001V25.67C14 25.67 18.04 24.9301 19.333 23.0001C20.773 20.8401 19.333 16.3302 19.333 16.3302" stroke="#3BB979" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="clip" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.823 13.5L13 8.19995M9.66701 4L4.058 9.71997C3.808 9.96997 3.66701 10.3099 3.66701 10.6699C3.66701 11.0199 3.808 11.3601 4.058 11.6101C4.308 11.8601 4.647 12 5 12C5.354 12 5.69299 11.8601 5.94299 11.6101L11.552 5.88989C12.052 5.38989 12.333 4.71 12.333 4C12.333 3.29 12.052 2.61011 11.552 2.11011C11.052 1.61011 10.374 1.33008 9.66701 1.33008C8.96001 1.33008 8.282 1.61011 7.782 2.11011L2.172 7.84009C1.421 8.59009 1 9.60992 1 10.6699C1 11.7299 1.421 12.75 2.172 13.5C2.922 14.25 3.939 14.6699 5 14.6699C6.061 14.6699 7.07899 14.25 7.82899 13.5" stroke="#E5E7EB" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
 </svg>

@@ -19,7 +19,10 @@ export type Icon =
   'guard-user' |
   'umbrella' |
   'check' |
-  'none';
+  'arrow-bottom' |
+  'arrow-top' |
+  'rocket' |
+  'clip'
 
 @Component({
   selector: 'app-svg-icon',
@@ -29,7 +32,7 @@ export type Icon =
 })
 export class SvgIcon  {
   @Input()
-  icon: Icon = 'none';
+  icon: Icon = 'building';
 
   get href() {
     return `/assets/svg/sprite.svg#${this.icon}`;
