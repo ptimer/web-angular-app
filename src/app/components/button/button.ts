@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Icon, SvgIcon } from '../svg-icon/svg-icon';
 import { NgClass } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { Link } from '../../../shared/types';
+import { Link } from '../../../common/types';
 
 @Component({
   selector: 'app-button',
