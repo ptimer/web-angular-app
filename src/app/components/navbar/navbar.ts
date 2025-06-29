@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { Icon, SvgIcon } from '../svg-icon/svg-icon';
 import { Router, RouterModule } from '@angular/router';
 import { Button } from '../button/button';
-import { Link } from '../../../shared/types';
+import { Link } from '../../../common/types';
 
 interface MenuItem {
   label: string;

@@ -1,15 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Table } from "../../../components/table/table";
-import { HttpClient } from '@angular/common/http';
-
-interface WorkItem {
-  originator: string;
-  client: string;
-  line: string;
-  type: string;
-  status: string;
-  created: string;
-}
+import { WorkItem } from '../../../../common/types';
+import { AppService } from '../../../data/services/app';
 
 @Component({
   selector: 'app-work-queue',
@@ -19,10 +11,10 @@ interface WorkItem {
 export class WorkQueue {
   workQueue: WorkItem[] = [];
 
-  constructor(private http: HttpClient) {}
+  appService = inject(AppService);
 
-  ngOnInit(): void {
-    this.http.get<WorkItem[]>('assets/mock-data/mock-work-queue.json').subscribe(data => {
+  constructor() {
+    this.appService.getWorkQueue().subscribe((data) => {
       this.workQueue = data;
     });
   }
