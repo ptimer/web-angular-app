@@ -1,20 +1,12 @@
-<div
-    [routerLink]="routerLink"
-    [ngClass]="{
-        'bg-blue-500 text-white': isActive,
-        'bg-slate-950 text-gray-300': !isActive
-    }"
-    class="flex gap-15 py-15 px-20 items-center justify-center rounded-4xl cursor-pointer"
+<button
+  [routerLink]="routerLink"
+  [ngClass]="buttonClass"
 >
     @if (icon) {
-        <app-svg-icon 
-            class="w-18 h-19 [&_use]:fill-none"
-            [ngClass]="{
-                '[&_use]:stroke-white': isActive,
-                '[&_use]:stroke-blue-500': !isActive
-            }"
+        <app-svg-icon
+            [ngClass]="iconClass"
             [icon]="icon"
         ></app-svg-icon>
     }
-    <span class="text-base">{{label}}</span>
-</div>
+    <span class="text-base">{{ label }}</span>
+</button>
